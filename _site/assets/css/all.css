@@ -751,7 +751,7 @@ section .skill-area .skill-unit .skill-range.rank-1 span:nth-child(n+2), section
   .trumb-container .trumb-more {
     height: 30px;
     margin: 1em auto auto 1em;
-    width: 100%;
+    width: 60%;
     position: absolute; }
     .trumb-container .trumb-more .trumb-more-icon {
       height: 25px;
