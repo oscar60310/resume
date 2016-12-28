@@ -2,11 +2,7 @@ title: ChenPing Tsai
 #-----
 # collections
 collections:
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
-- {name: "台鐵列車資訊查詢", type: "Android 應用程式", folder: "traintable"}
+- {name: "Railway Train Search APP", description: "Android APP, began serving at July, 2014. Has been downloaded over 10k times, 4.60 rating.", folder: "traintable"}
+- {name: "Railway Train Search APP", description: "Android APP", folder: "traintable"}
+- {name: "Railway Train Search APP", description: "Android APP", folder: "traintable"}
+- {name: "Railway Train Search APP", description: "Android APP", folder: "traintable"}

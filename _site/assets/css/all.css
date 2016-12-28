@@ -718,40 +718,57 @@ section .skill-area .skill-unit .skill-range.rank-1 span:nth-child(n+2), section
     display: table;
     clear: both; }
   .trumb-container .trumb-unit {
-    width: 25%;
-    position: relative;
-    padding-top: 15%;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    float: left; }
-    @media screen and (max-width: 760px) {
+    width: calc(50% - 4em);
+    height: 450px;
+    padding: 0em 1em 0em 1em;
+    margin: 2em 1em 0em 1em;
+    background: #353849;
+    float: left;
+    border-radius: 10px 10px 0 0; }
+    @media screen and (max-width: 600px) {
       .trumb-container .trumb-unit {
-        width: 50%;
-        padding-top: 25%; } }
-    .trumb-container .trumb-unit .trumb-overlay {
-      position: absolute;
-      top: 100%;
-      right: 0px;
-      left: 0px;
-      height: 100%;
-      background: rgba(99, 50, 33, 0.8);
-      -webkit-transition: all 0.15s ease-out 0s;
-      -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s;
-      text-align: center; }
-      .trumb-container .trumb-unit .trumb-overlay .trumb-name {
-        margin-top: 20px;
-        font-size: 24px;
-        color: white; }
-      .trumb-container .trumb-unit .trumb-overlay .trumb-type {
-        margin-top: 2px;
-        font-size: 18px;
-        color: white; }
-    .trumb-container .trumb-unit:hover .trumb-overlay {
-      position: absolute;
-      top: 0%;
-      right: 0px;
-      left: 0px; }
+        width: calc(100% - 4em); } }
+  .trumb-container .trumb-image {
+    border-radius: 10px 10px 0 0;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    margin-right: -1em; }
+  .trumb-container .trumb-line {
+    background: #747787;
+    margin: 0em 1em 0em 1em;
+    height: 2px; }
+  .trumb-container .trumb-name {
+    margin: 0.5em 1em 0.5em 1em;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 2px; }
+  .trumb-container .trumb-description {
+    margin: 0.5em 1em 0.5em 1em;
+    color: white;
+    font-size: 16px;
+    font-weight: 300; }
+  .trumb-container .trumb-more {
+    height: 30px;
+    margin: 1em auto auto 1em;
+    width: 100%;
+    position: absolute; }
+    .trumb-container .trumb-more .trumb-more-icon {
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      border: white solid 2px;
+      border-radius: 50%;
+      position: relative; }
+    .trumb-container .trumb-more .trumb-more-text {
+      text-transform: uppercase;
+      display: inline-block;
+      color: white;
+      margin: 4px auto auto 1em;
+      position: absolute; }
+    .trumb-container .trumb-more:hover .trumb-more-text {
+      color: #ffbf81; }
+    .trumb-container .trumb-more:hover .trumb-more-icon .st0 {
+      fill: #ffbf81; }
+    .trumb-container .trumb-more:hover .trumb-more-icon {
+      border: #ffbf81 solid 2px; }

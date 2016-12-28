@@ -2,13 +2,17 @@
     <h3 id="#collection">Collection</h3>
     <div class="trumb-container">
         {% for project in site.data.setting.collections %}
-        <a href="" class="trumb-unit" style="background-image:url(assets/img/collections/{{project.folder}}/trumb.png)">
-            <div class="trumb-overlay">
-                <div class="trumb-name">{{project.name}}</div>
-                <div class="trumb-type">{{project.type}}</div>
-                <div class="learn-more-icon">{% include icons/icon-zoom.html %}</div>
-            </div>
-        </a>
+        <div class="trumb-unit">
+            <img class="trumb-image" src='./assets/img/collections/{{project.folder}}/trumb.png'></img>
+            <div class="trumb-name">{{project.name}}</div>
+            <div class="trumb-line"></div>
+            <div class="trumb-description">{{project.description}}</div>
+            <a href="" class="trumb-more">
+                <div class="trumb-more-icon">{% include icons/icon-zoom.html %}</div>   
+                <div class="trumb-more-text">learn more</div>     
+            </a>
+            
+        </div>
         {% endfor %}
     </div>
 </section>

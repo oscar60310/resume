@@ -1,38 +1,62 @@
 .alt-section
   background: $bgcolor
+
 .trumb-container
   max-width: 960px
   margin: 0px auto
   padding-bottom: 100px
   +clearfix
-
   .trumb-unit
-    @media screen and (max-width: 760px)
-      width: 50%
-      padding-top: 25%
-    width: 25%
-    position: relative
-    padding-top: 15%
-    overflow: hidden
-    background:
-      position: center center
-      repeat: no-repeat
-      size: cover
-    display: block
+    @media screen and (max-width: 600px)
+      width: calc(100% - 4em)
+    width: calc(50% - 4em)
+    height: 450px
+    padding: 0em 1em 0em 1em
+    margin: 2em 1em 0em 1em
+    background: $accent
     float: left
-    .trumb-overlay
-      +position(absolute, 100% 0px null 0px)
-      height: 100%
-      background: fade-out($accent, .2)
-      +transition
-      text-align: center
-      .trumb-name
-        margin-top: 20px
-        font-size: 24px
-        color: white
-      .trumb-type
-        margin-top: 2px
-        font-size: 18px
-        color: white
-    &:hover .trumb-overlay
-      +position(absolute, 0% 0px null 0px)
+    border-radius: 10px 10px 0 0
+  .trumb-image
+    border-radius: 10px 10px 0 0
+    width: calc(100% + 2em)
+    margin-left: -1em
+    margin-right: -1em
+  .trumb-line
+    background: rgb(116, 119, 135)
+    margin: 0em 1em 0em 1em
+    height: 2px
+  .trumb-name
+    margin: 0.5em 1em 0.5em 1em
+    color: white
+    font-size: 22px
+    font-weight: 300
+    letter-spacing: 2px
+  .trumb-description
+    margin: 0.5em 1em 0.5em 1em
+    color: white
+    font-size: 16px
+    font-weight: 300
+  .trumb-more
+    height: 30px
+    margin: 1em auto auto 1em
+    width: 100%
+    position: absolute
+    .trumb-more-icon
+      +size(25px)
+      display: inline-block
+      border: white solid 2px
+      border-radius: 50%
+      position: relative
+    .trumb-more-text
+      text-transform: uppercase
+      display: inline-block
+      color: white
+      margin: 4px auto auto 1em
+      position: absolute
+    &:hover 
+      .trumb-more-text
+        color: #ffbf81
+      .trumb-more-icon .st0
+        fill: #ffbf81
+      .trumb-more-icon
+        border: #ffbf81 solid 2px
