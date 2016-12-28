@@ -1,0 +1,103 @@
+section
+  font-family: Microsoft JhengHei
+  h3
+    text-align: center
+    @extend %fonteng
+    color: rgb(178, 122, 32)
+    padding-top: 100px
+    margin-bottom: 30px
+  .face-img
+    background: url(../img/face.png)
+    +size(200px)
+    order: 3
+  .face-area
+    max-width: 780px
+    margin: 0 auto
+    +align-items(center)
+    +display(flex)
+    +justify-content(space-around)
+  [class^="icon-"]
+    +size(70px)
+    background: $bgcolor
+    border-radius: 50%
+    text-align: center
+    svg
+      @extend %center
+      fill: #3e3f35
+    &.icon-android
+      order: 1
+    &.icon-code
+      order: 2
+    &.icon-light
+      order: 4
+    &.icon-chat
+      order: 5
+  @media screen and (max-width: 600px) and (min-width: 400px)
+    .face-area
+      display: block
+      text-align: center
+      div
+        display: inline-block
+      .face-img
+        display: block
+        background-position: center center
+        width: auto
+        background-repeat: no-repeat
+        margin-bottom: 30px
+      [class^="icon-"]
+        margin: 10px
+  @media screen and (max-width: 400px)
+    .icon-chat
+      display: none
+    .icon-android
+      display: inline-block
+    .icon-code
+      display: inline-block 
+    .icon-light
+      display: inline-block
+    .face-area
+      display: block
+      text-align: center
+      .face-img
+        display: block
+        background-position: center center
+        width: auto
+        background-repeat: no-repeat
+        margin-bottom: 30px
+      [class^="icon-"]
+        margin: 10px
+  .summary
+    max-width: 620px
+    padding: 0 15px
+    margin: 50px auto
+    font-size: 24px
+    text-align: center
+    font-weight: 300
+  .skill-area
+    max-width: 700px
+    margin: 100px auto
+    color: rgb(167, 175, 188)
+    font-size: 18px
+    text-align: center
+    +clearfix
+    .skill-unit
+      float: left
+      .skill-range
+        font-size: 0
+        margin-top: 5px
+        margin-bottom: 30px
+        span
+          display: inline-block
+          +size(30px 6px)
+          background-color: $rankcolor
+        @for $i from 1 through 10
+          &.rank-#{$i} span:nth-child(n+#{$i+1})
+            @extend %skill-color
+  @media screen and (max-width: 700px)
+    .skill-unit
+      width: 100%
+  @media screen and (min-width: 700px)
+    .skill-unit
+      width: 350px
+%skill-color
+  background-color: $bgcolor
