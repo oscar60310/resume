@@ -9,3 +9,5 @@ sass:
   sass_dir: assets/css
   style: :nested
 exclude: ['.ai/*']
+gems:
+  - jekyll-last-modified-at

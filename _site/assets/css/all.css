@@ -577,6 +577,11 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 500; }
+  footer .last_modify {
+    color: rgba(196, 242, 223, 0.8);
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-weight: 500; }
 
 section {
   font-family: Microsoft JhengHei; }
@@ -750,9 +755,8 @@ section .skill-area .skill-unit .skill-range.rank-1 span:nth-child(n+2), section
     font-weight: 300; }
   .trumb-container .trumb-more {
     height: 30px;
-    margin: 1em auto auto 1em;
-    width: 60%;
-    position: absolute; }
+    margin: 2em auto auto 1em;
+    width: 60%; }
     .trumb-container .trumb-more .trumb-more-icon {
       height: 25px;
       width: 25px;
