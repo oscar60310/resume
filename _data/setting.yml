@@ -3,6 +3,5 @@ title: ChenPing Tsai
 # collections
 collections:
 - {name: "Railway Train Search APP", description: "Android APP, began serving at July, 2014. Has been downloaded over 10k times, 4.60 rating.", folder: "traintable"}
-- {name: "Railway Train Search APP", description: "Android APP", folder: "traintable"}
-- {name: "Railway Train Search APP", description: "Android APP", folder: "traintable"}
-- {name: "Railway Train Search APP", description: "Android APP", folder: "traintable"}
+- {name: "Tpcar", description: "Web Application, Get finalists in Taipei OMG competition which held by Taipei government.", folder: "tpcar"}
+- {name: "Teach Tech", description: "Android APP, get 1st prize in HackNTU Social Design group.", folder: "Teach_Tech"}
